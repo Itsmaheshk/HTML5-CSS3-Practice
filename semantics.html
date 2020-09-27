@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements in HTML5</title>
+
+    <style>
+        #main-pg{
+            background-color:black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #sec1{
+            background-color:rgb(37, 247, 47);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #sec2{
+            background-color: rgb(37, 247, 47);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #sec3{
+            background-color:rgb(37, 247, 47);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #sec4{
+            background-color:rgb(37, 247, 47);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .art{
+            background-color:rgb(240, 95, 90);
+            padding: 2px;
+            margin: 0px;
+        }
+
+        .head{
+            background-color:azure;
+            padding: 3px;
+            margin: 0px;
+        }
+
+        .title{
+            background-color: darkcyan;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .para{
+            background-color: darkgrey;
+            font-size: 24px;
+            text-align: justify;
+            margin: 0px;
+        }
+
+        .option{
+            padding: 5px;
+            padding-right: 246px;
+            background-color: rgb(235, 145, 93);
+            text-align: center;
+            margin-bottom: 2px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <section class="art">
+        <header class="head"> <!--Header,Nav,Main,Sections,Article etc. are the Semantic elements in HTML5-->
+            <nav>
+                <span class="option"><a href="#sec1" alt="HOME">HOME</a></span>
+                <span class="option"><a href="#sec2" alt="ABOUT">ABOUT</a></span>
+                <span class="option"><a href="#sec3" alt="CONTACT">CONTACT</a></span>
+                <span class="option"><a href="#sec4" alt="INFO">INFO</a></span>
+            </nav>
+        </header>
+    </section>
+
+
+    <main id="main-pg">
+        <section id="sec1">
+            <article class="art">
+                <header class="head">
+                    <h3 class="title">HOME</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRp0Lj0MGvRTe2BnUxBV39vnkS1CN1q2klWMg&usqp=CAU"
+                      alt="Nature image" style="width: 99%; height: 400px; padding: 10px 5px 10px;"/>
+                    <p class="para">  "Nature" refers to the phenomena of the physical world, and also to life in general.
+                         The term is often refers to the "natural environment" or wilderness—wild animals,
+                          rocks, forest, beaches, and in general areas
+                         that have not been substantially altered by humans, or which persist despite human intervention.
+                    </p>
+                </header>
+            </article>
+        </section>
+
+        <section id="sec2">
+            <article class="art">
+                <header class="head">
+                    <h3 class="title">ABOUT</h3>
+                    <p class="para">This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                    </p>
+                </header>
+            </article>
+        </section>
+
+
+        <section id="sec3">
+            <article class="art">
+                <header class="head">
+                    <h3 class="title">CONTACT</h3>
+                    <p class="para">This is about CONTACT.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                    </p>
+                </header>
+            </article>
+        </section>
+
+        <section id="sec4">
+            <article class="art">
+                <header class="head">
+                    <h3 class="title">INFO</h3>
+                    <p class="para">This is about INFO.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                        This is about tag.This is about tag.This is about tag.This is about tag.
+                    </p>
+                </header>
+            </article>
+        </section>
+
+
+        
+    </main>
+</body>
+</html>
