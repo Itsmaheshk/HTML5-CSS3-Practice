@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Detail & summary semantic elements </title>
+    <style>
+        .det1{
+            background-color: lightsalmon;
+            font-size: 25px;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        .det2{
+            background-color: rgb(255, 129, 79);
+            font-size: 25px;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        #head{
+            background-color: rgb(247, 198, 178);
+            font-size: 25px;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        #page{
+            background-color: rgb(15, 233, 15);
+            font-size: 25px;
+            padding: 5px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <main id="page">
+        <h2 id="head">Deatai & Summary elements uses</h2>
+    <details class="det1">
+        <summary>
+            Click on line to read Para
+        </summary>
+        <p>This is the para you get after clicking on <b>CLICK ON LINE TO READ PARA</b> line.
+         <i>Summary</i> is always 1st child elements of <i>details</i> tag.
+         & whatever you write after summary tag, like para., list etc. will be in hidden 
+         under summary tag.
+        </p>
+    </details>
+
+    <details class="det2">
+        <summary>Click on line to get list of Planets</summary>
+        <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupitar</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+        </ul>
+    </details>
+    </main>
+</body>
+</html>
