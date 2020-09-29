@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage of col&rowspan of table in HTML5</title>
+
+    <style>
+     .td,table{
+         border: 1px solid black;
+         border-color: #050a0f;
+         border-spacing: 0px;
+        }  
+
+        .td{
+            text-align: center;
+            font-size: 24px;
+            padding: 15px;
+        }
+
+        .table{
+            background-color: #f1af79;
+            padding-left: auto;
+            padding-right: auto;
+            margin: 24px;
+            width: 600px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 style="background-color: rgb(9, 133, 56); text-align: center;">Tables in HTML</h2>
+    <table class="table">
+        <caption style="background-color: rgb(253, 171, 113); text-align: center; padding: 10px;
+         border: 2px solid black; font-size:27px;">Weekly Time Table</caption>       <!--Title of Table-->
+        <tr>                                        <!--Row of table. Inside of this we wrote data using <th> <td> tag-->      
+            <th class="td">Monday</th>                         <!--Table head Row using <th> tag-->
+            <th class="td">Tuesday</th>
+            <th class="td">Wednsday</th>
+            <th class="td">Thursday</th>
+            <th class="td">Friday</th>
+            <th class="td" rowspan="6">Holiday</th>
+        </tr>
+
+        <tr>                                        
+            <td class="td">Marathi</td>                        <!--Row wise data in table using <td> tag-->
+            <td class="td">Science</td>
+            <td class="td">History</td>
+            <td class="td">Maths</td>
+            <td class="td">Hindi</td>
+        </tr>
+
+        <tr>
+            <td class="td" colspan="5">Lunch Break</td>       <!--Column span using "colspan" where 5 is 
+                                                                value of how many column want to span or streach--> 
+        </tr>
+
+        <tr>
+            <td class="td">Marathi</td>
+            <td class="td">Science</td>
+            <td class="td">History</td>
+            <td class="td">Maths</td>
+            <td class="td">Hindi</td>
+        </tr>
+
+        <tr>
+            <td class="td">Marathi</td>
+            <td class="td">Science</td>
+            <td class="td">History</td>
+            <td class="td">Maths</td>
+            <td class="td">Hindi</td>
+        </tr>
+
+        <tr>
+            <td class="td">Marathi</td>
+            <td class="td">Science</td>
+            <td class="td">History</td>
+            <td class="td">Maths</td>
+            <td class="td">Hindi</td>
+        </tr>
+
+       
+
+    </table>
+</body>
+</html>
