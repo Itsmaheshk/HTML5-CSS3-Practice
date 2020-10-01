@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Invoice</title>
+
+
+    <style>
+        .table,td{
+            border: 1px solid black;
+            border-spacing: 0px;
+            padding: 10px;
+            width: 600px;
+        }
+
+        .add{
+            text-align:center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            margin: 0px;
+        }
+
+        .blue{
+            background-color: lightskyblue;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <tr class="blue">
+            <td colspan="3"><b>Invoice #12345ABC</b></td>
+            <td><b>18 Jul 2019</b></td>
+        </tr>
+
+        <tr>
+            <td colspan="1">
+                <pre>
+                    <p class="add">
+                        <b>PAY TO:</b>
+                        The Tech Park
+                        123 Willow Street
+                        Boulcvard, LA-567892
+                    </p>
+                </pre>
+            </td>
+
+            <td colspan="3" >
+                <pre>
+                    <p class="add">
+                        <b>Customer:</b>
+                        John Lark
+                        Dummy Apartments
+                        276 Main Street
+                        Boulcvard, LA-567892
+                    </p>
+                </pre>
+            </td>
+        </tr>
+
+
+        <tr class="blue">
+            <td>
+                <b>Name/Description</b>
+            </td>
+
+            <td>
+                <b>Qty.</b>
+            </td>
+
+            <td>
+                <b>MRP</b>
+            </td>
+
+            <td>
+                <b>Amount</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Biryani
+            </td>
+
+            <td>
+                3
+            </td>
+
+            <td>
+                400
+            </td>
+
+            <td>
+                1200
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                Chocolate Shake
+            </td>
+
+            <td>
+                3
+            </td>
+
+            <td>
+                200
+            </td>
+
+            <td>
+                600
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3" class="blue">
+                <b>SubTotal:</b>
+            </td>
+
+            <td colspan="1">1800</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" class="blue" > 
+                <b>Tax:</b>
+            </td>
+
+            <td>10%</td>
+
+            <td>180</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="blue">
+                <b>Grand Total:</b>
+            </td>
+            
+            <td>1620</td>
+        </tr>
+    </table>
+</body>
+</html>
