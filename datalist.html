@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataList Tag used in form</title>
+    <style>
+        #form{
+            background-color: rgb(205, 245, 245);
+            width: 400px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;">This DatatList element is used as dropDown List or autoFill List</h3>
+    <form id="form">
+        <P>Type Programming Language you know below :</P>
+        <input list="TechLang" name="TechLanguage"/>
+        <datalist id="TechLang">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaSript">
+            <option value="Python">
+            <option value="C">
+            <option value="Java">
+            <option value="PHP">
+            <option value="C++">
+        </datalist>
+        <div>
+            <input type="submit" name="submitted" value="Submit" style="margin-top: 10px;"/>
+        </div>
+    </form>
+</body>
+</html>
