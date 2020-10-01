@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page using Form in HTML5</title>
+
+    <style>
+
+        #form{
+            background-color: rgb(205, 245, 245);
+            width: 400px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+        }
+
+        .div{
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+       
+    </style>
+</head>
+<body style="background-color: rgb(192, 143, 233);" >
+    <h2 style="text-align: center; margin-top:24px; margin-bottom: 10px; padding: 8px;" id="form">Sign Up</h2>
+
+    <form id="form" method="GET">                <!--We use form element or tag to create form  like login pages & use GET method to send all data to Backend-->
+        <div class="div">             <!--Here we are using DIV bcoz we want to make each Item in form seperate-->
+           <p>Username:</p>
+           <input type="text"  name="FullName"/>  <!--we use name attribute bcoz it is used to send data to backend-->
+        </div>
+
+        <div class="div">
+           <p>Password:</p>
+           <input type="text"  name="Password"/> 
+        </div>
+
+       <div class="div">
+           <p>Conferm Password:</p>
+           <input type="text"  name="ReapeatPass"/>
+       </div>
+
+       <div class="div">
+           <p>Email:</p>
+           <input type="email" name="email"/>
+       </div>
+
+       <div class="div">
+           <p>Gender:</p>                                                  <!--We use VALUE attribute in INPUT tag to display name on button or box etc.-->
+           <input type="radio" name="gender" value="Male">Male</input>     <!--Use type as "RADIO" for radio type options to select-->
+           <input type="radio" name="gender" value="Female">Female</input>
+           <input type="radio" name="gender" value="Other">Other</input>
+       </div>
+        <br>
+       <div class="div">
+           <p> Select Security Quation:</p>
+           <select name="Security Quation"> <!--For Drop down menu or for selecting items we use SELECT tag with NAME attr. having OPTION as a 1st child-->
+             <option value="Pet Name">What is your first pet name?</option> 
+             <option value="Job Nmae">What is your 1st Job?</option>
+             <option value="Nick Name">What is your Nick name?</option>
+           </select>
+       </div>
+
+       <div class="div">
+           <textarea name="answers" rows="6" cols="22">        </textarea>  <!--We use TEXTAREA tag to create Text box with dimensions as in row & cols.-->
+       </div>
+       <br>
+       <div class="div">
+           <input type="checkbox" name="terms&conditions" value="accept"> I accept all terms & conditions </input>  <!-- type CHECKBOX to insert accepting tick box Option-->
+       </div> 
+        <br>
+       <div class="div">
+           <input type="submit" name="yes" value="submit"/> <!--for submitting option to submit login info-->
+       </div>
+    </form>
+</body>
+</html>
