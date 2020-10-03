@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page using Form in HTML5</title>
+
+    <style>
+
+        #form{
+            background: linear-gradient(to top,  #48075c 0%,#e994e2 50%,#e97ce0 50%,#e4b5dc 100%);
+            width: 400px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+        }
+
+        .div{
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .in-box{
+            margin: 0px;
+            border: 0.5px solid black;
+           width: 250px;
+           height: 20px;
+        }
+
+        .label{
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+            padding: 0px;
+        }
+
+       
+    </style>
+</head>                                                                                      <!-- This is same file as form.html with some new input elements & attributes-->
+<body style="background-color:white" >
+    <h2 style="text-align: center; margin-top:24px; margin-bottom: 10px; padding: 10px;" id="form">Login</h2>
+
+    <form id="form" method="GET">                
+        <div class="div">            
+           <p class="label">Username:</p>
+           <input type="text"  name="FullName" class="in-box" placeholder="eg. John Kelly" autofocus required/> <!--Required is used for mandetory box filling-->
+        </div>                                                                                          <!--Auto Focus is used to make box highlighted default with blinking cursor-->
+
+        <div class="div">
+           <p class="label">Password:</p>
+           <input type="text"  name="Password" class="in-box" placeholder="Password" maxlength="16" required /> <!--Placeholder Used to give hint about Box-->
+        </div>
+
+       <div class="div">
+           <p class="label">Conferm Password:</p>
+           <input type="text"  name="ReapeatPass" class="in-box" placeholder="Conferm Password" required maxlength="16"/> <!--Maxlenght allow max input chara-->
+       </div>
+
+       <div class="div">
+           <p class="label">Email:</p>
+           <input type="email" name="email" class="in-box" placeholder="abcde@gmail.com" required/>
+       </div>
+
+       <div class="div">
+           <p class="label" >Gender:</p>                                                
+           <input type="radio" name="gender" value="Male" multiple>Male</input>       <!-- Here multiple is make no sense but Multiple atrribute is used for selecting Multiple Options-->
+           <input type="radio" name="gender" value="Female" multiple>Female</input>
+           <input type="radio" name="gender" value="Other" multiple>Other</input>
+       </div>
+        
+
+        <div class="div">
+            <p class="label">Enter Birth Date:</p>
+            <input type="date" min="1999-01-01" max="2020-12-31" class="in-box required                    <!--To use calender in form with max & min restriction dates-->
+        </div>
+       
+        <div class="div">
+           <p class="label"> Select Security Quation:</p>
+           <select name="Security Quation">                                            
+             <option value="Pet Name">What is your first pet name?</option> 
+             <option value="Job Nmae">What is your 1st Job?</option>
+             <option value="Nick Name">What is your Nick name?</option>
+           </select>
+       </div>
+       <br>
+       <div class="div">
+          <textarea name="answers" rows="6" cols="22" class="in-box" minlength="1" maxlength="60">  </textarea>  
+       </div>
+
+       <div>
+           <p class="label">Upload your Resume:</p>
+           <input type="file" name="resume" class="in-box" style="margin-left: 75px; margin-right: 75px;"/>     <!--To upload Files-->
+       </div>
+       <br>
+
+        <div class="div">
+            <input type="checkbox" name="terms&conditions" value="accept" required/> I accept all terms & conditions </input> 
+        </div> 
+        <br>
+
+       <div class="div" style="display: inline;">
+           <input type="submit" name="yes" value="SUBMIT" style="margin-right: 70px; margin-left: 65px; margin-bottom: 15px;"/>
+      
+          <input type="reset" value="RESET" style="margin-right: 70px; margin-left: 65px; margin-bottom: 15px;"/> 
+     </div>
+       
+    </form>
+</body>
+</html>
